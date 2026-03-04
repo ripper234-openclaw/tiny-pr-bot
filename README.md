@@ -55,3 +55,52 @@ If a PR is pending review, the bot will **not create another PR**.
 ## Feedback Protocol
 
 Supported responses:
+
+```
+APPROVE
+CHANGES
+NOPE
+NOW
+PAUSE
+RESUME
+BUDGET <n>
+```
+
+Feedback can be given via:
+- GitHub PR comments
+- Telegram
+
+## Logging
+
+All bot actions are logged to Google Sheets:
+
+- PR attempts
+- effort level
+- generation cost
+- feedback
+- status
+
+Weekly reports include a **cost vs PR approval rate histogram**.
+
+## Repository Structure
+
+```
+workspace/
+  SOUL.md
+  AGENTS.md
+  USER.md
+  TOOLS.md
+  PR_TEMPLATE.md
+  FEEDBACK_PROTOCOL.md
+
+config/
+  clawbot.config.json
+
+docs/
+```
+
+## Status
+
+Early experimental build.
+
+Goal: create a **self-improving spec assistant** that helps move projects forward with minimal cognitive overhead.
