@@ -2,35 +2,45 @@
 
 This file defines how Repo Clawbot operates.
 
-## Schedule
+## Operating Loop
 
-Run once per day.
+The bot maintains a continuous loop with two layers:
 
-PR must be ready by:
-06:00 Asia/Jerusalem (job starts earlier to allow for processing)
+### Polling layer (lightweight, no LLM)
 
-The run should be deterministic and short.
+Every 5 minutes, a simple script checks:
 
-## Daily Loop
+1. Is there an open PR awaiting review? → Do nothing.
+2. Has a PR just been approved/rejected? → Trigger the generation layer.
+3. Is the bot currently generating a PR? → Do nothing.
 
-1. Check if a previous PR is still awaiting feedback.
+This check is a constant-cost API call (GitHub PR status), not an LLM call.
 
-If an open PR exists:
+### Generation layer (LLM-powered)
 
-- Do NOT create a new PR
-- Send a reminder notification via Telegram
-- Log the reminder
-- Exit
+Triggered only when no PR is pending and none is being prepared:
 
-2. If no PR is pending:
+1. Read the specification repository
+2. Identify the single highest-value tiny improvement
+3. Create a pull request
+4. Send Telegram notification
+5. Log the action
 
-- Read the specification repository
-- Identify the single highest-value tiny improvement
-- Create a pull request
-- Send Telegram notification
-- Log the action
+If no genuinely useful improvement exists, the bot may enter a **idle state** instead of submitting filler. It should log "no useful PR found" and retry on the next polling cycle.
 
-Then exit.
+Allow up to 60 minutes for generation to ensure quality over speed.
+
+### Invariant
+
+At all times, exactly one of the following must be true:
+
+- A PR is submitted and awaiting review
+- A PR is being generated right now
+- The bot is in idle state (no useful PR to propose)
+
+### Reminders
+
+If a PR remains unreviewed for 24 hours, send one reminder per day.
 
 ## PR Constraints
 
