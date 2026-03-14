@@ -94,18 +94,6 @@ State can be stored in:
 
 - Google Sheets state tab (recommended for v1)
 
-## Reminders
-
-If a PR remains unreviewed:
-
-Send one reminder per day.
-
-Reminder format:
-
-"⏳ Pending PR  
-<PR link>  
-Reply APPROVE / CHANGES / NOPE"
-
 ## Weekly Stats Pulse
 
 Once per week generate a report containing:
