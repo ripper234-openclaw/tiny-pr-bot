@@ -1,7 +1,6 @@
 {
   "target_repo": "ripper234/tiny-pr-bot",
   "timezone": "Asia/Jerusalem",
-  "daily_run_time": "05:00",
   "max_daily_cost_usd": 10,
 
   "telegram": {
