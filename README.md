@@ -42,15 +42,12 @@ The bot avoids:
 
 ## Operating Model
 
-Daily loop:
+Continuous polling loop:
 
-1. Review the spec repository
-2. Identify the highest-value small improvement
-3. Create a tiny PR
-4. Notify via Telegram
-5. Wait for feedback
-
-If a PR is pending review, the bot will **not create another PR**.
+1. Lightweight poll checks for pending PRs (no LLM cost)
+2. When no PR is pending, identify the highest-value tiny improvement
+3. Create a PR and notify via Telegram
+4. Wait for feedback before proposing the next PR
 
 ## Feedback Protocol
 
