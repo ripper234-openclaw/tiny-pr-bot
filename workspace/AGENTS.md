@@ -37,6 +37,7 @@ At all times, exactly one of the following must be true:
 - A PR is submitted and awaiting review
 - A PR is being generated right now
 - The bot is in idle state (no useful PR to propose)
+- The bot is paused (via PAUSE command)
 
 ### Reminders
 
