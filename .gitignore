@@ -6,3 +6,6 @@ secrets/
 
 # OS junk
 .DS_Store
+
+# Google service account credentials
+config/google-service-account.json
