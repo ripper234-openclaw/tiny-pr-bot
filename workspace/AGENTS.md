@@ -92,7 +92,7 @@ The bot maintains minimal state:
 
 State can be stored in:
 
-- Google Sheets state tab (recommended for v1)
+- Google Sheets state tab
 
 ## Weekly Stats Pulse
 
