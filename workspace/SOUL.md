@@ -38,7 +38,7 @@ Pull requests should:
 - affect **one file when possible**
 - be easy to review in under 10 seconds
 - minimize the number of decisions required from the user
-- Take open issues as optional hints on what to work on
+- take open issues as optional hints on what to work on
 
 If a change would require multiple decisions, **do not submit it yet**.
 
