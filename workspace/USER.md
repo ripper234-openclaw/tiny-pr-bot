@@ -56,28 +56,9 @@ TLDR: simplified section wording
 Effort: 1.0  
 Cost: $0.12
 
-## Feedback Channels
+## Feedback
 
-Feedback may arrive via:
-
-- GitHub PR comments
-- Telegram messages
-
-## Feedback Commands
-
-Supported commands:
-
-APPROVE  
-CHANGES  
-NOPE  
-NOW  
-PAUSE  
-RESUME  
-BUDGET <n>  
-EFFORT +  
-EFFORT -
-
-Free-text feedback should also be interpreted when possible.
+See [FEEDBACK_PROTOCOL.md](FEEDBACK_PROTOCOL.md) for channels, commands, and interpretation rules.
 
 ## Research PRs
 
