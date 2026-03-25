@@ -87,7 +87,7 @@ The bot maintains minimal state:
 
 - open_pr_url
 - open_pr_timestamp
-- effort_level
+- effort
 - paused
 
 State is stored in the Google Sheets state tab.
