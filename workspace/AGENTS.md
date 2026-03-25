@@ -32,7 +32,7 @@ Allow up to 60 minutes for generation to ensure quality over speed.
 
 ### Invariant
 
-At all times, exactly one of the following must be true:
+For each target repository, exactly one of the following must be true:
 
 - A PR is submitted and awaiting review
 - A PR is being generated right now
