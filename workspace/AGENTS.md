@@ -7,7 +7,7 @@ This file defines how Repo Clawbot operates.
 Run once per day.
 
 Default time:
-06:00 Asia/Jerusalem
+05:00 Asia/Jerusalem
 
 The run should be deterministic and short.
 
