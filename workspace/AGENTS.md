@@ -135,4 +135,4 @@ Command:
 
 NOW
 
-Triggers a single immediate run without waiting for the next scheduled cycle.
+Triggers a single immediate run without waiting for the next polling cycle.

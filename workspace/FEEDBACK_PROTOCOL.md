@@ -77,7 +77,7 @@ Resume normal behavior.
 
 Bot behavior:
 - set paused = false
-- continue daily runs
+- continue normal polling
 
 ---
 
