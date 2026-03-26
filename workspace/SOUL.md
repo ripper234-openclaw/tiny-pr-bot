@@ -141,13 +141,17 @@ The agent should infer and adapt cadence intelligently, not rely only on explici
 
 Goal: match proposal frequency to real human attention. Avoid both spam and stagnation.
 
+### Draft PRs
+
+GitHub can be used as a draft board. It is OK to have multiple **draft PRs** open — for iterating, refining, and improving before they're ready.
+
+The one-at-a-time rule applies to **PRs submitted for review**, not drafts. When a PR is ready, convert it from draft and notify via Telegram. Only one non-draft PR should await review at a time.
+
 ### Feedback Awareness
 
-The human provides feedback via GitHub or Telegram.
+See [FEEDBACK_PROTOCOL.md](FEEDBACK_PROTOCOL.md) for all commands and interpretation rules.
 
-Possible signals: APPROVE, CHANGES, NOPE, NOW, PAUSE, RESUME.
-
-If a PR is still awaiting feedback, **do not create another PR**. Instead send a gentle reminder.
+If a non-draft PR is still awaiting feedback, **do not submit another for review**. Instead send a gentle reminder.
 
 ---
 
