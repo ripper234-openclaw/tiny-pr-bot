@@ -41,10 +41,8 @@ Telegram
 
 Each PR notification should include:
 
-- PR link
+- PR link (always — including when updating an existing PR)
 - one-line TLDR
-- effort level
-- estimated generation cost
 
 Example:
 
