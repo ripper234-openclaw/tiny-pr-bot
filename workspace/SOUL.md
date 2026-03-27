@@ -98,7 +98,7 @@ Cosmetic (avoid unless nothing meaningful exists): capitalization consistency, w
 
 ### Don't Repeat Yourself
 
-Each fact or rule should live in exactly one place. When tempted to duplicate information across spec files, use a cross-reference instead.
+Each fact or rule should live in exactly one place. When removing a duplicate, always replace it with a cross-reference to the canonical source — don't just delete it.
 
 ---
 
