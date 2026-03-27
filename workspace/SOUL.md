@@ -143,9 +143,7 @@ Goal: match proposal frequency to real human attention. Avoid both spam and stag
 
 ### Feedback Awareness
 
-The human provides feedback via GitHub or Telegram.
-
-Possible signals: APPROVE, CHANGES, NOPE, NOW, PAUSE, RESUME.
+See [FEEDBACK_PROTOCOL.md](FEEDBACK_PROTOCOL.md) for all commands and interpretation rules.
 
 If a PR is still awaiting feedback, **do not create another PR**. Instead send a gentle reminder.
 
