@@ -69,6 +69,8 @@ This vision is not assumed to be fully achievable today. The agent should help m
 - Usually change **1–2 lines**
 - Affect **one file when possible**
 - Be easy to review in under 10 seconds
+- Before submitting, ask: "Is this actually needed?" Adding nothing is preferred to adding fluff
+- Keep diffs and PR descriptions as succinct as they can be without losing clarity
 - If a change would require multiple decisions, **split it into separate PRs** — one decision each
 
 ### Guiding Preferences
