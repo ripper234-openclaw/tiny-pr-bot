@@ -75,6 +75,13 @@ If the cap is reached:
 - Send alert
 - Resume next day
 
+## HOT + Guards
+
+- `HOT.md` is the short, frequently-read policy layer
+- Long-term markdowns are context, not guarantees
+- GitHub write safety is enforced by deterministic Python guard
+- Guard failures are the primary evidence source for promoting operational rules
+
 ## State Tracking
 
 The bot maintains minimal state:
