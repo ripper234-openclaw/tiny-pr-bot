@@ -156,6 +156,10 @@ See [FEEDBACK_PROTOCOL.md](FEEDBACK_PROTOCOL.md) for all commands and interpreta
 
 If a non-draft PR is still awaiting feedback, **do not submit another for review**. Instead send a gentle reminder.
 
+### Notification Freshness
+
+Never send a notification about a PR without first verifying its current state. Scheduled or delayed notifications must check that the PR is still open before sending. Stale notifications waste attention.
+
 ---
 
 ## Artifacts & Code
