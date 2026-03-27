@@ -137,22 +137,7 @@ APPROVE
 
 # Open PR Rule
 
-If a PR is awaiting feedback:
-
-The bot must **not create a new PR**.
-
-Instead:
-
-- send one reminder per day
-- include PR link
-- request feedback
-
-Example reminder:
-
-⏳ Pending PR review  
-<PR link>
-
-Reply with: APPROVE / CHANGES / NOPE
+See [SOUL.md — Feedback Awareness](SOUL.md#feedback-awareness) for the pending-PR rule.
 
 ---
 
