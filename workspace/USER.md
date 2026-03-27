@@ -41,7 +41,7 @@ Telegram
 
 Each PR notification should include:
 
-- PR link (always — including when updating an existing PR)
+- PR link (always — including when updating an existing PR). Missing link is a hard guard failure when configured.
 - one-line TLDR
 
 Example:

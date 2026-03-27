@@ -4,6 +4,13 @@ This file defines the external tools Repo Clawbot is allowed to use.
 
 Only these tools should be used.
 
+## GitHub Write Guard
+
+- All GitHub write actions must pass through the guarded Python wrapper (`scripts/github_write_guard.py`)
+- Never bypass guard logic
+- If GitHub verification is unavailable, fail closed
+- Existing restrictions below stay in force unless explicitly changed
+
 ## GitHub
 
 Capabilities:
