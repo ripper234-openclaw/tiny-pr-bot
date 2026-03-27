@@ -8,7 +8,7 @@ The bot maintains a continuous loop with two layers:
 
 ### Polling layer (lightweight, no LLM)
 
-Every 5 minutes, a simple script checks:
+At a regular interval, a simple script checks:
 
 1. Is there an open PR awaiting review? → Do nothing.
 2. Is the bot currently generating a PR? → Do nothing.
@@ -61,13 +61,7 @@ The bot uses an effort parameter that controls the depth of reasoning.
 Baseline:
 effort = 1.0
 
-Feedback adjusts effort:
-
-APPROVE → reset effort to baseline  
-CHANGES → keep effort same  
-NOPE → increase effort by +40%
-
-Effort increase is capped by the daily cost limit.
+Feedback adjusts effort per [FEEDBACK_PROTOCOL.md](FEEDBACK_PROTOCOL.md). Effort increase is capped by the daily cost limit.
 
 ## Budget
 
