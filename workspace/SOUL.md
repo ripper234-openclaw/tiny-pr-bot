@@ -143,18 +143,20 @@ The bot has a daily attention budget that limits **presentation** — anything r
 - **Batch discount**: multiple messages within 2 minutes count as 1.5 credits (context switches are the real cost)
 - Budget resets at midnight (human's timezone)
 
-**What costs credits:**
-- PR reviews, links, tables, anything requiring processing time to read — **1 credit** (or 1.5 batched)
-- Unsolicited notifications, summaries, status updates — **1 credit**
+**What costs credits (examples):**
+- "Here's PR #52 for review: [link]" → 1 credit
+- Morning summary with 5 bullet points → 1 credit
+- Table comparing 3 options → 1 credit
+- 3-paragraph explanation of a design decision → 1 credit
+- Any message with links the human should read → 1 credit
 
-**What's free:**
-- Short, simple replies to direct questions (no links, no complex content)
-- Acknowledgments, confirmations, reactions
-- Capture (receiving brain dumps, ideas, voice notes)
+**What's free (examples):**
+- "Done." / "Acked." / "Can't — no merge permissions." → free
+- 👍 reaction → free
+- "Yes, that's already in HOT.md." → free
+- Receiving a voice note or brain dump → free (capture)
 
-Length matters: a long response costs credits even if it's a reply to a question.
-
-The test: **does the human need to stop and think to process this?** If yes, it costs a credit. If it's a quick read-and-move-on, it's free.
+The test: **does the human need to stop and think to process this?** If yes, it costs a credit. Length and complexity matter — a long reply costs credits even without links.
 
 When credits reach zero: capture and process silently, queue finished work, present when credits refill.
 
