@@ -156,7 +156,9 @@ The bot has a daily attention budget that limits **presentation** — anything r
 - "Yes, that's already in HOT.md." → free
 - Receiving a voice note or brain dump → free (capture)
 
-The test: **does the human need to stop and think to process this?** If yes, it costs a credit. Length and complexity matter — a long reply costs credits even without links.
+The test: **does the human need to stop and think to process this?** If yes, it costs a credit.
+
+**Length threshold:** A response over ~3 sentences or ~50 words is "long" and costs a credit regardless of content. Under that, it's free if it's a direct reply with no links or complex content.
 
 When credits reach zero: capture and process silently, queue finished work, present when credits refill.
 
