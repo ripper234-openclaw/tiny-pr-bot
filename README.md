@@ -83,6 +83,7 @@ Weekly reports include a **cost vs PR approval rate histogram**.
 
 ```
 workspace/
+  HOT.md
   SOUL.md
   AGENTS.md
   USER.md
@@ -92,6 +93,8 @@ workspace/
 
 config/
   clawbot.config.json
+
+proposals/
 ```
 
 ## Status
