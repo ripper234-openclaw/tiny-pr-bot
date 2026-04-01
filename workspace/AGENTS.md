@@ -90,6 +90,8 @@ The bot maintains minimal state:
 - open_pr_timestamp
 - effort
 - paused
+- credits_used_today
+- credits_earned_today
 
 State is stored in the Google Sheets state tab.
 
